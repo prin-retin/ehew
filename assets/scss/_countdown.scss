@@ -1,0 +1,110 @@
+/* =============== countdown css ==============*/
+
+.countdown-section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 150px;
+
+  @media #{$md} {
+    padding-top: 100px;
+  }
+  @media #{$xs} {
+    padding-top: 100px;
+  }
+
+  .section-title {
+
+    h1 {
+      @media #{$lg} {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .countdown-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 650px;
+
+    @media #{$laptop} {
+      max-width: 600px;
+    }
+
+    @media #{$lg} {
+      max-width: 500px;
+    }
+
+    @media #{$md, $xs} {
+      max-width: 100%;
+      width: 100%;
+      position: static;
+      margin-bottom: 50px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+  }
+
+  .countdown {
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+
+        @media #{$lg} {
+          margin-right: 25px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        span {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          font-size: 30px;
+          font-weight: 600;
+          border: 6px solid;
+          margin-bottom: 15px;
+
+          &#days {
+            border-color: #4771EA;
+          }
+
+          &#hours {
+            border-color: #B83AEC;
+          }
+
+          &#minutes {
+            border-color: #E44E83;
+          }
+
+          &#seconds {
+            border-color: #FF6240;
+          }
+        }
+
+        p {
+          font-size: 25px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

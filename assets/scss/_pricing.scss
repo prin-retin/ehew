@@ -1,0 +1,79 @@
+/* =============== pricing css ============= */
+
+.pricing-section {
+
+
+  .single-pricing {
+    padding: 60px 30px;
+    background: #282E63;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      @include transform(translateY(-50%));
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: $body-bg;
+    }
+
+    &::after {
+      right: -17px;
+    }
+    &::before {
+      left: -17px;
+    }
+
+    .best-offer {
+      position: absolute;
+      background: $theme-color;
+      color: $white;
+      padding: 5px 100px;
+      right: -90px;
+      top: 28px;
+      @include transform(rotate(45deg));
+    }
+
+
+    h3 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .price {
+      padding: 12px 30px;
+      font-size: 30px;
+      font-weight: 700;
+      border-radius: 90px;
+      background: #26294D;
+      margin-bottom: 30px;
+    }
+
+    .list {
+      margin-bottom: 30px;
+
+      li {
+        font-size: 16px;
+        line-height: 35px;
+      }
+    }
+
+    .main-btn {
+      padding: 15px 30px;
+      border: 2px solid transparent;
+      color: $white;
+
+      &.border-btn {
+        border-color: #505478;
+        background: none;
+      }
+    }
+  }
+}

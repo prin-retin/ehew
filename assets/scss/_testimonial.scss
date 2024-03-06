@@ -1,0 +1,151 @@
+/* ================= testimonial css ================ */
+
+.testimonial-section {
+    background: #282E63;
+
+    .testimonial-active-wrapper {
+        position: relative;
+        margin-right: -24px;
+
+        @media #{$xs} {
+            margin-right: 0;
+        }
+
+        .testimonial-active {
+
+            .single-testimonial {
+                margin-bottom: 70px;
+                text-align: center;
+                position: relative;
+
+                .map-bg {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                &:hover {
+
+                    .quote {
+                        color: $theme-color;
+                    }
+                }
+
+                .quote {
+                    margin-bottom: 25px;
+                    line-height: 1;
+                    font-size: 55px;
+                    @include transform(rotate(180deg));
+                    @include transition(.3s);
+                }
+
+                .content {
+                    margin-bottom: 30px;
+
+                    p {
+                        font-size: 25px;
+                        line-height: 35px;
+
+                        @media #{$md} {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                        @media #{$xs} {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+
+                .info {
+
+                    h4 {
+                        font-size: 25px;
+                        font-weight: 600;
+
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .tns-nav {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 9;
+
+            button {
+                text-indent: -99999px;
+                width: 14px;
+                height: 14px;
+                background: #26294D;
+                border-radius: 50%;
+                @include transition(.3s);
+                cursor: pointer;
+                margin: 5px 8px;
+                border: none;
+
+                &.tns-nav-active {
+                    background: $theme-color;
+                }
+
+            }
+        }
+
+        .tns-controls {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            height: 55px;
+            @include transform(translateY(-50%));
+
+            button {
+                border: 0;
+                
+
+                span {
+                    background: #26294D;
+                    width: 55px;
+                    height: 55px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white;
+                    border-radius: 50%;
+                    @include transition(.3s);
+                    position: absolute;
+                    top: 0;
+
+                    &:hover {
+                        background: $theme-color;
+                    }
+
+                    &.prev {
+                        left: 0;
+                    }
+
+                    &.next {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

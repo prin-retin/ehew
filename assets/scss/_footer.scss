@@ -1,0 +1,108 @@
+/*===========================
+    13.footer css 
+===========================*/
+
+.footer {
+    position: relative;
+    z-index: 1;
+
+    .map-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-bottom: 35px;
+
+        .footer-logo {
+
+            a {
+                display: inline-block;
+                margin-bottom: 50px;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+
+                a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 5px 15px;
+                    color: $white;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright-area {
+        border-top: 1px solid #505478;
+        padding: 22px 0;
+
+        p {
+            color: $white;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: flex-end;
+
+            @media #{$xs} {
+                justify-content: center;
+            }
+
+            li {
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $white;
+                    background: #282E63;
+                    margin-left: 15px;
+                    font-size: 18px;
+
+                    &:hover {
+                        background: $theme-color;
+                    }
+
+                    @media #{$xs} {
+                        margin: 30px 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

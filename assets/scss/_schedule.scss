@@ -1,0 +1,110 @@
+/* ================= schedule css ============= */
+
+.schedule-section {
+
+    .schedule-tabs {
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+
+        .schedule-nav-item {
+            flex: 1;
+
+            .schedule-nav-link {
+                padding: 20px 10px;
+                font-size: 17px;
+                color: $white;
+                background: #282E63;
+                width: 100%;
+                text-align: center;
+
+                span {
+                    font-size: 25px;
+
+                    @media #{$xs} {
+                        font-size: 18px;
+                    }
+                }
+
+                @media #{$xs} {
+                    font-size: 14px;
+                }
+
+                &.active {
+                    background: #323561;
+                }
+            }
+        }
+    }
+
+    .schedule-tab-content {
+
+        .schedule-item {
+            display: flex;
+            padding: 40px 30px;
+            background: #282E63;
+            margin-bottom: 30px;
+
+            @media #{$lg} {
+                padding: 30px 20px;
+            }
+            @media #{$xs} {
+                flex-direction: column;
+            }
+
+            .image {
+                max-width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                margin-left: 30px;
+
+                @media #{$lg} {
+                    margin-left: 20px
+                }
+                @media #{$xs} {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+
+                    @media #{$lg} {
+                        font-size: 25px;
+                    }
+                }
+
+                .meta {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 20px;
+
+                    h4 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-right: 20px;
+
+                        @media #{$lg} {
+                            font-size: 18px;
+                        }
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

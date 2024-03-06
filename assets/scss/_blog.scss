@@ -1,0 +1,70 @@
+/*===========================
+    11.Blog css 
+===========================*/
+.blog-section {
+
+    .single-blog {
+        margin-bottom: 30px;
+
+        .image {
+
+            a {
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .content {
+            padding: 30px 20px;
+            background: #282E63;
+
+            .meta {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+
+                .author {
+                    margin-right: 10px;
+
+                    a {
+                        color: $white;
+
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                a {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 25px;
+                    color: $white;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            & > a {
+                color: $white;
+
+                &:hover {
+                    letter-spacing: 2px;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+
+
+
+}

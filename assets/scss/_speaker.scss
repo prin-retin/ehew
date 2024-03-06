@@ -1,0 +1,97 @@
+/* ================= speaker css =============== */
+
+.speaker-section {
+
+  .speaker-row {
+    margin-top: 100px;
+    
+    @media #{$md} {
+      margin-top: 0;
+    }
+    @media #{$xs} {
+      margin-top: 0;
+    }
+  }
+  .single-speaker {
+    margin-bottom: 60px;
+
+    &.middle {
+      margin-top: -100px;
+
+      @media #{$md} {
+        margin-top: 0;
+      }
+      @media #{$xs} {
+        margin-top: 0;
+      }
+    }
+
+    &:hover {
+
+      .image {
+
+        .socials {
+          opacity: 1;
+          visibility: visible;
+          height: 64px;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      margin-bottom: 30px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+
+      .socials {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include transition(.3s);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+  
+        ul {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 20px;
+          height: 64px;
+          background: $theme-color;
+
+          li {
+            line-height: 1;
+
+            a {
+              padding: 0 15px;
+              color: $white;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .info {
+      text-align: center;
+
+      h3 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+}
