@@ -117,7 +117,7 @@
 
     //========= glightbox
     const myGallery = GLightbox({
-        'href': 'https://www.youtube.com/watch?v=LXb3EKWsInQ&t=23s&ab_channel=Jacob%2BKatieSchwarz',
+        'href': 'https://www.youtube.com/watch?v=g0zKQz46QY4',
         'type': 'video',
         'source': 'youtube', //vimeo, youtube or local
         'width': 900,
