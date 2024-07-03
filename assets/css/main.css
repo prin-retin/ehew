@@ -1245,6 +1245,7 @@ p {
 
 .speaker-section .single-speaker .image img {
   width: 100%;
+  height: 400px;
 }
 
 .speaker-section .single-speaker .image .socials {
